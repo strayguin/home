@@ -43,3 +43,9 @@ complete -F _bc_docker_images dockershell
 if [ -d ~/.myansible/bashrc.d ]; then
 	source ~/.myansible/bashrc.d/*
 fi
+
+PATH="/home/strayguin/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/strayguin/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/strayguin/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/strayguin/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/strayguin/perl5"; export PERL_MM_OPT;
